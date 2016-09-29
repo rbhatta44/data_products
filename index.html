@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Effect of plant type and moisture on CO2 uptake</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Effect of plant type and moisture on CO2 uptake">
+  <meta name="author" content="Ram Bhatta">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Effect of plant type and moisture on CO2 uptake</h1>
+    <h2></h2>
+    <p>Ram Bhatta<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Objective</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The objective of this work is to study CO2 uptake of six plants from Quebec and six plants from Mississippi using dataset available in R package. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Description</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The dataset contains 84 rows and 5 columns. The CO2 uptake was measured at several levels of ambient CO2 concentration. Some of the different types of plants were chilled whereas others were unchilled. More information is available at <a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/zCO2.html">https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/zCO2.html</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Results</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">summary(CO2)
+</code></pre>
+
+<pre><code>##      Plant             Type         Treatment       conc     
+##  Qn1    : 7   Quebec     :42   nonchilled:42   Min.   :  95  
+##  Qn2    : 7   Mississippi:42   chilled   :42   1st Qu.: 175  
+##  Qn3    : 7                                    Median : 350  
+##  Qc1    : 7                                    Mean   : 435  
+##  Qc3    : 7                                    3rd Qu.: 675  
+##  Qc2    : 7                                    Max.   :1000  
+##  (Other):42                                                  
+##      uptake     
+##  Min.   : 7.70  
+##  1st Qu.:17.90  
+##  Median :28.30  
+##  Mean   :27.21  
+##  3rd Qu.:37.12  
+##  Max.   :45.50  
+## 
+</code></pre>
+
+<pre><code class="r"># Carbon dioxide concentrations are in mL/L.
+# Carbon dioxide uptake rates are in units of mol/m^2 sec.
+# The origin of the plant is separated as Quebec or Mississippi.
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <article data-timings="">
+    <p>I hope this helps to understand the effect of various factors on CO2 uptake of different plants. Thanks you for your time!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Objective'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Description'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Results'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='NA'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
